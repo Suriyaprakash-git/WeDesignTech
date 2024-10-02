@@ -1668,7 +1668,7 @@ ul {
     }
 
     ::-webkit-scrollbar {
-        width: 40px;
+        width: 16px;
     }
 
     header {
