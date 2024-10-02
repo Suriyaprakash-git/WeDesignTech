@@ -672,7 +672,7 @@ ul {
 
 .newsContent p {
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
 }
 
 .newsBody {
@@ -795,23 +795,41 @@ ul {
 
 }
 
+.formContainer{
+    padding-right: 5rem;
+}
+
+.contactBody form{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.contactBody form input:focus{
+    outline: none;
+}
 .contactBody form input {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     line-height: 16px;
-    text-align: start;
+    text-align: left;
     letter-spacing: normal;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: rgb(0, 0, 0);
+    border: none;
     background-color: transparent;
+
 }
 
+.contactBody form button{
+    border: none;
+    background-color: transparent;
+    align-content: end;
+}
 .contactBody form i {
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
     letter-spacing: normal;
     color: #000000, 49.0%;
     margin-left: 1rem;
@@ -853,7 +871,7 @@ ul {
 }
 
 
-@media (width  <=576px) {
+@media screen and (min-width: 493px) and (max-width: 576px) {
 
     * {
         margin: 0;
@@ -900,7 +918,7 @@ ul {
         color: #02b1af;
         font-family: "Roboto", sans-serif;
         text-align: center;
-        text-wrap:balance   ;
+        text-wrap: balance;
         font-weight: bold;
         font-style: normal;
         line-height: 48px;
@@ -921,7 +939,11 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        row-gap: 0.5rem;
+        gap: 2rem;
+    }
+
+    .heroButton button {
+        margin-right: 0rem;
     }
 
     #quoteBtn {
@@ -943,7 +965,7 @@ ul {
 
     }
 
-    #whatwedoBtn{
+    #whatwedoBtn {
         border: 1px solid black;
         background-color: transparent;
         padding: 18px 40px;
@@ -970,638 +992,1428 @@ ul {
 
     /* Main code start's here*/
 
-/*ExpertTeam code*/
-.expertTeamContainer {
-    margin: 0 3rem 0 5rem;
-}
-
-.expertTeam {
-    margin-top: 10rem;
-}
-
-.expertTeamCard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    row-gap: 1rem;
-    padding-left: 2rem;
-    padding-bottom: 7rem;
-}
-
-.expertTeamIcon i {
-    font-size: 47px;
-    color: #ed4e31;
-    margin-bottom: 0rem;
-}
-
-.expertTeamBody h3 {
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    padding-bottom: 1rem;
-}
-
-.expertTeamBody p {
-    padding: 0;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-
-/* ExpertTeam code end's here  */
-
-/*ExpertTeam code*/
-.expertTeamContainer {
-    margin:0 3rem 0 6rem;
-}
-
-.expertTeam {
-    margin-top: 10rem;
-}
-
-.expertTeamBody{
-    gap: 2rem;
-}
-
-.expertTeamCard {
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.expertTeamBody h3 {
-    font-size: 25px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    line-height: 35px;
-    font-style: normal;
-    font-stretch: condensed;
-}
-
-.expertTeamBody p {
-    padding: 1rem 0;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    line-height: 29px;
-    font-style: normal;
-    font-stretch: condensed;
-}
-
-.expertTeamCard:active, .expertTeamCard:focus{
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
-}
-
-.expertTeamIcon i {
-    font-size: 47px;
-    color: #ed4e31;
-    margin-bottom: 0rem;
-}
-
-/* ExpertTeam code end's here  */
-
-/* About code start's here  */
-.aboutContainer {
-    margin: 4rem 0 2rem;
-}
-
-.about {
-    margin: 0 5rem;
-    padding-top: 6rem;
-}
-
-.aboutImage {
-    float: left;
-    position: relative;
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: auto;
-    margin-left: 0rem;
-}
-
-.aboutImg2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.aboutContent h2 {
-    font-size: 40px;
-    color: #02b1af;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 48px;
-    text-align: start;
-}
-
-.aboutContent h3 {
-    font-size: 22px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    line-height: 35px;
-    font-style: normal;
-    font-stretch: condensed;
-}
-
-.aboutContent p {
-    font-size: 18px;
-    padding: 1.5rem 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    line-height: 27px;
-    font-style: normal;
-    font-stretch: condensed;
-}
-
-.aboutContentImage {
-    ascent-override: 16 / 9;
-    width: 27%;
-}
-
-/* About code end's here  */
-
-/* Excellence code starts here  */
-.excellence {
-    background: linear-gradient(rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.562)), url(./assets/images/section-bgimage1.jpg);
-    /* background-image: url(./assets/images/section-bgimage1.jpg); */
-    background-color: aqua;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: center;
-    padding: 3rem 0;
-    margin: 5rem 0;
-}
-
-.excellenceContent{
-    margin: 0 1.rem;
-}
-
-.excellenceContent h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    line-height: 48px;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.excellenceContent p {
-    padding: 1rem 0;
-    font-size: 18px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    line-height: 29px;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffffff;
-}
-
-
-.excellenceBody {
-    padding-top: 1rem;
-}
-
-.excellenceCardHead{
-    gap:1rem;
-}
-
-.excellenceCardHead h3 {
-    font-size: 75px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    line-height: 75px;
-    font-style: normal;
-    padding-bottom: 0;
-}
-
-.excellenceCardBody p {
-    font-size: 24px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    line-height: 38px;
-    font-style: normal;
-    padding-bottom: 1rem;
-}
-
-/* Exellence code end's here  */   
-
-/* Web desing and development code start's here  */
-.webDesign {
-    margin: 5rem 6rem;
-}
-
-.webDesignHeader {
-    margin-bottom: 3rem;
-}
-
-.webDesignTittle h2 {
-    font-size: 40px;
-    color: #02b1af;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    line-height: 48px;
-    font-style: normal;
-}
-
-.webDesignCrontent p {
-    font-size: 18px;
-    padding-top: 2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    line-height: 29px;
-    font-style: normal;
-}
-
-.webDesignBody {
-    gap: 4rem;
-}
-
-
-.webDesignCardContent h4 {
-    font-size: 24px;
-    padding: 1rem 0;
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-   
-}
-
-.webDesignCardContent p {
-    font-size: 16px;
-    padding: 1rem 0;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    text-wrap: balance;
-}
-
-/* Web desing and development code end's here  */
-
-/* why choose us code start's here  */
-.chooseUs {
-    margin: 4rem 0 4rem 3rem;
-}
-
-.chooseUsTitle h3 {
-    font-size: 18px;
-    text-align: center;
-    color: #ed4e31;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: condensed;
-}
-
-.chooseUsTitle h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #02b1af;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 48px;
-}
-
-.chooseUsTitle p {
-    font-size: 18px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 29px;
-    padding-top: 3rem;
-}
-
-
-
-.chooseUsContent {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem 0;
-
-}
-
-.chooseUsBody{
-    margin-left: 7rem;
-}
-
-.chooseUsContentCard {
-    margin: 0;
-
-}
-
-.chooseUsContent {
-    padding: 0 12rem 2rem 2rem;
-}
-
-.chooseUsContentHead1 i {
-    font-size: 62px;
-    color: #ed4e31;
-    padding:  2rem 2rem 2rem 0;
-}
-
-.chooseUsContentBody1 h4 {
-    font-size: 24px;
-    text-align: left;
-    font-family: "Kanit", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    padding-bottom: 1rem;
-}
-
-.chooseUsContentBody1 p {
-    font-size: 18px;
-    text-align: left;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    line-height: 29px;
-    font-style: normal;
-
-}
-
-.chooseUsFig img {
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: auto;
-    margin: 5rem 0;
-}
-
-/* why choose us code end's here  */
-
-/* Happy client code start' here  */
-.happyClient {
-    margin: 4rem 2rem;
-}
-
-.happyClientBody {
-    gap: 0rem;
-}
-
-.happyClientImg img {
-
-    width: 35rem;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid #02b1af;
-}
-
-.happyClientContent p {
-    font-size: 18px;
-    text-align: center;
-    margin: 0 2rem;
-    margin-bottom: 3rem;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    line-height: 29px;
-    font-style: normal;
-}
-
-.happyClientTittle h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #02b1af;
-    padding-bottom: 3rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 48px;
-}
-
-.happyClientBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
-/* Happy client code end's here  */
-
-/* Blog news container code start's here*/
-.news {
-    margin: 4rem 6.5rem;
-}
-
-.newsHeader {
-    padding-bottom: 2rem;
-}
-
-
-.newsContent h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #02b1af;
-    padding-bottom: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 48px;
-}
-
-.newsContent h3 {
-    font-size: 18px;
-    text-align: center;
-    color: #ed4e31;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 29px;
-}
-
-.newsContent p {
-    font-size: 18px;
-    text-align: center; 
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    line-height: 29px;
-    font-style: normal;
-}
-
-.newsBody {
-    gap: 3rem
-}
-
-.newsCard {
-
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
-}
-
-.newsCardBody {
-    padding-top: 3rem;
-    padding-left: 2rem;
-    padding-bottom: 3.5rem;
-}
-
-.newsCardBody h2 {
-    margin-left: 1rem;
-}
-
-.newsCardBodyContent h3 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 15.75px;
-    line-height: 25.2px;
-    text-align: start;
-    letter-spacing: 3.15px;
-    padding: 3rem 0;
-}
-
-.newsCardBody h2 {
-    font-family: "Kanit", sans-serif;
-    font-size: 30px;
-    line-height: 42px;
-    font-weight: 600;
-    text-align: start;
-    letter-spacing: normal;
-}
-
-.newsCardBodyContent {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-
-.newsCardBodyContent i {
-    color: white;
-    border: 1px solid white;
-    background-color: gray;
-    border-radius: 50%;
-}
-
-.newsCardBodyContent i {
-    font-size: 15.75px;
-    padding: 0.6rem;
-    margin: 1rem;
-
-}
-
-/* latest news container code start's here*/
-/* main container end's here */
-
-/* footer code start's here */
-/* contact code start's here */
-
-.contactContainer {
-    margin: 0 10rem 0 14rem;
-
-}
-
-.contact {
-    padding: 10rem 0;
-}
-
-
-.contactBody {
-    gap: 1rem;
-}
-
-.contactHeadImg img {
-
-    aspect-ratio: 9/6 auto;
-    /* Typical video aspect ratio */
-    width: 67%;
-    /* Ensures the image scales with the container */
-    height: auto;
-    /* Maintains the aspect ratio */
-
-}
-
-.contactBody1 p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 25.6px;
-    text-align: start;
-    letter-spacing: normal;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
-
-.contactButton i {
-    font-size: 18px;
-    text-align: left;
-    padding-right: 3rem;
-}
-
-.contactBody h3 {
-    font-size: 24px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.contactBody p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 25.6px;
-    text-align: start;
-    letter-spacing: normal;
-    padding-top: 2rem;
-
-}
-
-.contactBody form input {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: start;
-    letter-spacing: normal;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: rgb(0, 0, 0);
-    background-color: transparent;
-}
-
-.contactBody form i {
-    font-family: "Font Awesome 5 Free";
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: normal;
-    color: #000000, 49.0%;
-    margin-left: 1rem;
-}
-
-
-.aboutLinks li a {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 40.8px;
-    text-align: start;
-    letter-spacing: normal;
-    color: black;
-}
-
-.servicesLinks li a {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 40.8px;
-    text-align: start;
-    letter-spacing: normal;
-    color: black;
-}
-
-.contactForm {
-    padding-top: 3rem;
-
-}
-
-.copyrightContent {
-    margin: 4rem 8rem;
-
-}
-
-.copyrightContent p {
-    font-size: 16px;
-    text-align: center;
-    padding-top: 3rem;
-}
-
+    /*ExpertTeam code*/
+    .expertTeamContainer {
+        margin: 0 3rem 0 5rem;
+    }
+
+    .expertTeam {
+        margin-top: 10rem;
+    }
+
+    .expertTeamCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        row-gap: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 7rem;
+    }
+
+    .expertTeamIcon i {
+        font-size: 47px;
+        color: #ed4e31;
+        margin-bottom: 0rem;
+    }
+
+    .expertTeamBody h3 {
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    .expertTeamBody p {
+        padding: 0;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+
+    /* ExpertTeam code end's here  */
+
+    /*ExpertTeam code*/
+    .expertTeamContainer {
+        margin: 0 3rem 0 6rem;
+    }
+
+    .expertTeam {
+        margin-top: 10rem;
+    }
+
+    .expertTeamBody {
+        gap: 2rem;
+    }
+
+    .expertTeamCard {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .expertTeamBody h3 {
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 35px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .expertTeamBody p {
+        padding: 1rem 0;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .expertTeamCard:active,
+    .expertTeamCard:focus {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .expertTeamIcon i {
+        font-size: 47px;
+        color: #ed4e31;
+        margin-bottom: 0rem;
+    }
+
+    /* ExpertTeam code end's here  */
+
+    /* About code start's here  */
+    .aboutContainer {
+        margin: 4rem 0 2rem;
+    }
+
+    .about {
+        margin: 0 5rem;
+        padding-top: 6rem;
+    }
+
+    .aboutImage {
+        float: left;
+        position: relative;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+        margin-left: 0rem;
+    }
+
+    .aboutImg2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .aboutContent h2 {
+        font-size: 40px;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+        text-align: start;
+    }
+
+    .aboutContent h3 {
+        font-size: 22px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        line-height: 35px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .aboutContent p {
+        font-size: 18px;
+        padding: 1.5rem 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 27px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .aboutContentImage {
+        ascent-override: 16 / 9;
+        width: 27%;
+    }
+
+    /* About code end's here  */
+
+    /* Excellence code starts here  */
+    .excellence {
+        background: linear-gradient(rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.562)), url(./assets/images/section-bgimage1.jpg);
+        /* background-image: url(./assets/images/section-bgimage1.jpg); */
+        background-color: aqua;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: center;
+        padding: 3rem 0;
+        margin: 5rem 0;
+    }
+
+    .excellenceContent {
+        margin: 0 1.rem;
+    }
+
+    .excellenceContent h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        line-height: 48px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .excellenceContent p {
+        padding: 1rem 0;
+        font-size: 18px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        line-height: 29px;
+        font-weight: 400;
+        font-style: normal;
+        color: #ffffff;
+    }
+
+
+    .excellenceBody {
+        padding-top: 1rem;
+    }
+
+    .excellenceCardHead {
+        gap: 1rem;
+    }
+
+    .excellenceCardHead h3 {
+        font-size: 75px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        line-height: 75px;
+        font-style: normal;
+        padding-bottom: 0;
+    }
+
+    .excellenceCardBody p {
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 38px;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    /* Exellence code end's here  */
+
+    /* Web desing and development code start's here  */
+    .webDesign {
+        margin: 5rem 6rem;
+    }
+
+    .webDesignHeader {
+        margin-bottom: 3rem;
+    }
+
+    .webDesignTittle h2 {
+        font-size: 40px;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+        font-style: normal;
+    }
+
+    .webDesignCrontent p {
+        font-size: 18px;
+        padding-top: 2rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .webDesignBody {
+        gap: 4rem;
+    }
+
+
+    .webDesignCardContent h4 {
+        font-size: 24px;
+        padding: 1rem 0;
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    .webDesignCardContent p {
+        font-size: 16px;
+        padding: 1rem 0;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        text-wrap: balance;
+    }
+
+    /* Web desing and development code end's here  */
+
+    /* why choose us code start's here  */
+    .chooseUs {
+        margin: 4rem 0 4rem 3rem;
+    }
+
+    .chooseUsTitle h3 {
+        font-size: 18px;
+        text-align: center;
+        color: #ed4e31;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .chooseUsTitle h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .chooseUsTitle p {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 29px;
+        padding-top: 3rem;
+    }
+
+
+
+    .chooseUsContent {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 0;
+
+    }
+
+    .chooseUsBody {
+        margin-left: 7rem;
+    }
+
+    .chooseUsContentCard {
+        margin: 0;
+
+    }
+
+    .chooseUsContent {
+        padding: 0 12rem 2rem 2rem;
+    }
+
+    .chooseUsContentHead1 i {
+        font-size: 62px;
+        color: #ed4e31;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .chooseUsContentBody1 h4 {
+        font-size: 24px;
+        text-align: left;
+        font-family: "Kanit", sans-serif;
+        font-weight: 550;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    .chooseUsContentBody1 p {
+        font-size: 18px;
+        text-align: left;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+
+    }
+
+    .chooseUsFig img {
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    /* why choose us code end's here  */
+
+    /* Happy client code start' here  */
+    .happyClient {
+        margin: 4rem 2rem;
+    }
+
+    .happyClientBody {
+        gap: 0rem;
+    }
+
+    .happyClientImg img {
+
+        width: 35rem;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #02b1af;
+    }
+
+    .happyClientContent p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .happyClientTittle h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        padding-bottom: 3rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .happyClientBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    /* Happy client code end's here  */
+
+    /* Blog news container code start's here*/
+    .news {
+        margin: 4rem 6.5rem;
+    }
+
+    .newsHeader {
+        padding-bottom: 2rem;
+    }
+
+
+    .newsContent h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        padding-bottom: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .newsContent h3 {
+        font-size: 18px;
+        text-align: center;
+        color: #ed4e31;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 29px;
+    }
+
+    .newsContent p {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .newsBody {
+        gap: 3rem
+    }
+
+    .newsCard {
+
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .newsCardBody {
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .newsCardBody h2 {
+        margin-left: 1rem;
+    }
+
+    .newsCardBodyContent h3 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 15.75px;
+        line-height: 25.2px;
+        text-align: start;
+        letter-spacing: 3.15px;
+        padding: 3rem 0;
+    }
+
+    .newsCardBody h2 {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 600;
+        text-align: start;
+        letter-spacing: normal;
+    }
+
+    .newsCardBodyContent {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .newsCardBodyContent i {
+        color: white;
+        border: 1px solid white;
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    .newsCardBodyContent i {
+        font-size: 15.75px;
+        padding: 0.6rem;
+        margin: 1rem;
+
+    }
+
+    /* latest news container code start's here*/
+    /* main container end's here */
+
+    /* footer code start's here */
+    /* contact code start's here */
+
+    .contactContainer {
+        margin: 0 10rem 0 10rem;
+
+    }
+
+    .contact {
+        padding: 10rem 0;
+    }
+
+
+    .contactBody {
+        gap: 1rem;
+    }
+
+    .contactHeadImg img {
+
+        aspect-ratio: 9/6 auto;
+        /* Typical video aspect ratio */
+        width: 67%;
+        /* Ensures the image scales with the container */
+        height: auto;
+        /* Maintains the aspect ratio */
+
+    }
+
+    .contactBody1 p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-align: start;
+        letter-spacing: normal;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .contactButton i {
+        font-size: 18px;
+        text-align: left;
+        padding-right: 3rem;
+    }
+
+    .contactBody h3 {
+        font-size: 24px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .contactBody p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-align: start;
+        letter-spacing: normal;
+        padding-top: 2rem;
+
+    }
+
+    .formContainer{
+        padding-right: 15rem;
+    }
+
+    .contactBody form{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid black;
+    }
+
+    .contactBody form input:focus{
+        outline: none;
+    }
+
+    .contactBody form input {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: left;
+        letter-spacing: normal;
+        border: none;
+        background-color: transparent;
+
+    }
+
+    .contactBody form button{
+        border: none;
+        background-color: transparent;
+        align-content: end;
+    }
+
+    .contactBody form i {
+        font-family: "Font Awesome 5 Free";
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        letter-spacing: normal;
+        color: #000000, 49.0%;
+        margin-left: 1rem;
+    }
+
+    .aboutLinks li a {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 40.8px;
+        text-align: start;
+        letter-spacing: normal;
+        color: black;
+    }
+
+    .servicesLinks li a {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 40.8px;
+        text-align: start;
+        letter-spacing: normal;
+        color: black;
+    }
+
+    .contactForm {
+        padding-top: 3rem;
+
+    }
+
+    .copyrightContent {
+        margin: 4rem 8rem;
+
+    }
+
+    .copyrightContent p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 492px) {
+
+    /* Styles */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-6 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    ::-webkit-scrollbar {
+        width: 40px;
+    }
+
+    header {
+        background-image: url(./assets/images/section1-vector-layer1.png);
+        background-position: right top;
+        background-size: 80vw;
+        background-repeat: no-repeat;
+        padding-bottom: 10rem;
+
+    }
+
+    /* Hero code starts here */
+
+    .heroSectionContainer {
+        margin: 0 3rem;
+    }
+
+    .heroContent {
+        margin-top: 8rem;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff6c;
+        padding: 4rem 3rem;
+    }
+
+    .heroContent h1 {
+        font-size: 40px;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        text-wrap: balance;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .heroContent p {
+        margin: 2rem 0;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 400;
+        line-height: 28px;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    .heroButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #quoteBtn {
+        border: 1px solid #ed4e31;
+        background-color: #ed4e31;
+        padding: 18px 40px;
+
+    }
+
+    #quoteBtnTxt a {
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-align: center;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: white;
+
+    }
+
+    #whatwedoBtn {
+        border: 1px solid black;
+        background-color: transparent;
+        padding: 18px 40px;
+    }
+
+    #whatwedoBtn a {
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-align: center;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: black;
+    }
+
+    .heroImage img {
+        display: none;
+    }
+
+
+    /* Hero code end's here*/
+    /* Header end'S here*/
+
+    /* Main code start's here*/
+
+    /*ExpertTeam code*/
+    .expertTeamContainer {
+        margin: 0 3rem 0 5rem;
+    }
+
+    .expertTeam {
+        margin-top: 10rem;
+    }
+
+    .expertTeamCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        row-gap: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 7rem;
+    }
+
+    .expertTeamIcon i {
+        font-size: 47px;
+        color: #ed4e31;
+        margin-bottom: 0rem;
+    }
+
+    .expertTeamBody h3 {
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    .expertTeamBody p {
+        padding: 0;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+
+    /* ExpertTeam code end's here  */
+
+    /*ExpertTeam code*/
+    .expertTeamContainer {
+        margin: 0 3rem 0 6rem;
+    }
+
+    .expertTeam {
+        margin-top: 10rem;
+    }
+
+    .expertTeamBody {
+        gap: 2rem;
+    }
+
+    .expertTeamCard {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .expertTeamBody h3 {
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 35px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .expertTeamBody p {
+        padding: 1rem 0;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .expertTeamCard:active,
+    .expertTeamCard:focus {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .expertTeamIcon i {
+        font-size: 47px;
+        color: #ed4e31;
+        margin-bottom: 0rem;
+    }
+
+    /* ExpertTeam code end's here  */
+
+    /* About code start's here  */
+    .aboutContainer {
+        margin: 4rem 0 2rem;
+    }
+
+    .about {
+        margin: 0 5rem;
+        padding-top: 6rem;
+    }
+
+    .aboutImage {
+        float: left;
+        position: relative;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+        margin-left: 0rem;
+    }
+
+    .aboutImg2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .aboutContent h2 {
+        font-size: 40px;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+        text-align: start;
+    }
+
+    .aboutContent h3 {
+        font-size: 22px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        line-height: 35px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .aboutContent p {
+        font-size: 18px;
+        padding: 1.5rem 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 27px;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .aboutContentImage {
+        ascent-override: 16 / 9;
+        width: 27%;
+    }
+
+    /* About code end's here  */
+
+    /* Excellence code starts here  */
+    .excellence {
+        background: linear-gradient(rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.562)), url(./assets/images/section-bgimage1.jpg);
+        /* background-image: url(./assets/images/section-bgimage1.jpg); */
+        background-color: aqua;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: center;
+        padding: 3rem 0;
+        margin: 5rem 0;
+    }
+
+    .excellenceContent {
+        margin: 0 1.rem;
+    }
+
+    .excellenceContent h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        line-height: 48px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .excellenceContent p {
+        padding: 1rem 0;
+        font-size: 18px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        line-height: 29px;
+        font-weight: 400;
+        font-style: normal;
+        color: #ffffff;
+    }
+
+
+    .excellenceBody {
+        padding-top: 1rem;
+    }
+
+    .excellenceCardHead {
+        gap: 1rem;
+    }
+
+    .excellenceCardHead h3 {
+        font-size: 75px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        line-height: 75px;
+        font-style: normal;
+        padding-bottom: 0;
+    }
+
+    .excellenceCardBody p {
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 38px;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    /* Exellence code end's here  */
+
+    /* Web desing and development code start's here  */
+    .webDesign {
+        margin: 5rem 6rem;
+    }
+
+    .webDesignHeader {
+        margin-bottom: 3rem;
+    }
+
+    .webDesignTittle h2 {
+        font-size: 40px;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+        font-style: normal;
+    }
+
+    .webDesignCrontent p {
+        font-size: 18px;
+        padding-top: 2rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .webDesignBody {
+        gap: 4rem;
+    }
+
+
+    .webDesignCardContent h4 {
+        font-size: 24px;
+        padding: 1rem 0;
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    .webDesignCardContent p {
+        font-size: 16px;
+        padding: 1rem 0;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        text-wrap: balance;
+    }
+
+    /* Web desing and development code end's here  */
+
+    /* why choose us code start's here  */
+    .chooseUs {
+        margin: 4rem 0 4rem 3rem;
+    }
+
+    .chooseUsTitle h3 {
+        font-size: 18px;
+        text-align: center;
+        color: #ed4e31;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: condensed;
+    }
+
+    .chooseUsTitle h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .chooseUsTitle p {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 29px;
+        padding-top: 3rem;
+    }
+
+
+
+    .chooseUsContent {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 0;
+
+    }
+
+    .chooseUsBody {
+        margin-left: 7rem;
+    }
+
+    .chooseUsContentCard {
+        margin: 0;
+
+    }
+
+    .chooseUsContent {
+        padding: 0 12rem 2rem 2rem;
+    }
+
+    .chooseUsContentHead1 i {
+        font-size: 62px;
+        color: #ed4e31;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .chooseUsContentBody1 h4 {
+        font-size: 24px;
+        text-align: left;
+        font-family: "Kanit", sans-serif;
+        font-weight: 550;
+        font-style: normal;
+        padding-bottom: 1rem;
+    }
+
+    .chooseUsContentBody1 p {
+        font-size: 18px;
+        text-align: left;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+
+    }
+
+    .chooseUsFig img {
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    /* why choose us code end's here  */
+
+    /* Happy client code start' here  */
+    .happyClient {
+        margin: 4rem 2rem;
+    }
+
+    .happyClientBody {
+        gap: 0rem;
+    }
+
+    .happyClientImg img {
+
+        width: 35rem;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #02b1af;
+    }
+
+    .happyClientContent p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .happyClientTittle h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        padding-bottom: 3rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .happyClientBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    /* Happy client code end's here  */
+
+    /* Blog news container code start's here*/
+    .news {
+        margin: 4rem 6.5rem;
+    }
+
+    .newsHeader {
+        padding-bottom: 2rem;
+    }
+
+
+    .newsContent h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #02b1af;
+        padding-bottom: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .newsContent h3 {
+        font-size: 18px;
+        text-align: center;
+        color: #ed4e31;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 29px;
+    }
+
+    .newsContent p {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        line-height: 29px;
+        font-style: normal;
+    }
+
+    .newsBody {
+        gap: 3rem
+    }
+
+    .newsCard {
+
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .newsCardBody {
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .newsCardBody h2 {
+        margin-left: 1rem;
+    }
+
+    .newsCardBodyContent h3 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 15.75px;
+        line-height: 25.2px;
+        text-align: start;
+        letter-spacing: 3.15px;
+        padding: 3rem 0;
+    }
+
+    .newsCardBody h2 {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 600;
+        text-align: start;
+        letter-spacing: normal;
+    }
+
+    .newsCardBodyContent {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .newsCardBodyContent i {
+        color: white;
+        border: 1px solid white;
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    .newsCardBodyContent i {
+        font-size: 15.75px;
+        padding: 0.6rem;
+        margin: 1rem;
+
+    }
+
+    /* latest news container code start's here*/
+    /* main container end's here */
+
+    /* footer code start's here */
+    /* contact code start's here */
+
+    .contactContainer {
+        margin: 0 10rem 0 10rem;
+
+    }
+
+    .contact {
+        padding: 10rem 0;
+    }
+
+
+    .contactBody {
+        gap: 1rem;
+    }
+
+    .contactHeadImg img {
+
+        aspect-ratio: 9/6 auto;
+        /* Typical video aspect ratio */
+        width: 67%;
+        /* Ensures the image scales with the container */
+        height: auto;
+        /* Maintains the aspect ratio */
+
+    }
+
+    .contactBody1 p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-align: start;
+        letter-spacing: normal;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .contactButton i {
+        font-size: 18px;
+        text-align: left;
+        padding-right: 3rem;
+    }
+
+    .contactBody h3 {
+        font-size: 24px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .contactBody p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-align: start;
+        letter-spacing: normal;
+        padding-top: 2rem;
+
+    }
+
+    .formContainer{
+        padding-right: 8rem;
+    }
+
+    .contactBody form{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid black;
+        
+    }
+
+    .contactBody form input {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: left;
+        letter-spacing: normal;
+        border: none;
+        background-color: transparent;
+
+    }
+
+    .contactBody form button{
+        border: none;
+        background-color: transparent;
+        align-content: end;
+    }
+    .contactBody form i {
+        font-family: "Font Awesome 5 Free";
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        letter-spacing: normal;
+        color: #000000, 49.0%;
+        margin-left: 1rem;
+    }
+
+
+    .aboutLinks li a {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 40.8px;
+        text-align: start;
+        letter-spacing: normal;
+        color: black;
+    }
+
+    .servicesLinks li a {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 40.8px;
+        text-align: start;
+        letter-spacing: normal;
+        color: black;
+    }
+
+
+
+    .copyrightContent {
+        margin: 2rem 8rem;
+
+    }
+
+    .copyrightContent p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 1rem;
+    }
 }
