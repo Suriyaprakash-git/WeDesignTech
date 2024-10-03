@@ -134,10 +134,6 @@ header {
     background-image: url(./assets/images/section1-vector-layer1.png);
     background-position: right top;
     background-size: 58%;
-/*     this is last update */
-    width: 100%;
-    height:auto;
-/*     this is last update */
     background-repeat: no-repeat;
     padding-bottom: 10rem;
 
@@ -800,7 +796,7 @@ ul {
 }
 
 .formContainer{
-    padding-right: 10rem;
+    padding-right: 5rem;
 }
 
 .contactBody form{
@@ -892,7 +888,7 @@ ul {
     }
 
     ::-webkit-scrollbar {
-        width: 0px;
+        width: 40px;
     }
 
     header {
@@ -1660,11 +1656,13 @@ ul {
     * {
         margin: 0;
         padding: 0;
-/*         border: 1px solid red; */
+        
     }
 
-    body { overflow: hidden; }
-    
+    body{
+        overflow: hidden;
+    }
+
     .grid-1,
     .grid-2,
     .grid-3,
@@ -1682,10 +1680,11 @@ ul {
         background-image: url(./assets/images/section1-vector-layer1.png);
         background-position: right top;
         background-size: 80vw;
+        width: 100%;
+        height: auto;
         background-repeat: no-repeat;
         padding-bottom: 10rem;
-        width:100%;
-        margin-left:0;
+
     }
 
     /* Hero code starts here */
