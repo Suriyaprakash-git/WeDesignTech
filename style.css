@@ -888,7 +888,7 @@ ul {
     }
 
     ::-webkit-scrollbar {
-        width: 40px;
+        width: 0px;
     }
 
     header {
@@ -1668,7 +1668,7 @@ ul {
     }
 
     ::-webkit-scrollbar {
-        width: 16px;
+        width: 0px;
     }
 
     header {
