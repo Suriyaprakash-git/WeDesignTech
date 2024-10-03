@@ -800,7 +800,7 @@ ul {
 }
 
 .formContainer{
-    padding-right: 5rem;
+    padding-right: 10rem;
 }
 
 .contactBody form{
@@ -1660,11 +1660,12 @@ ul {
     * {
         margin: 0;
         padding: 0;
-        border: 1px solid red;
+/*         border: 1px solid red; */
     }
 
-    body { overflow: hidden; }
-
+/*     body { overflow: hidden; } */
+    .row { margin-left: 0; margin-right: 0; }
+    
     .grid-1,
     .grid-2,
     .grid-3,
@@ -1684,7 +1685,8 @@ ul {
         background-size: 80vw;
         background-repeat: no-repeat;
         padding-bottom: 10rem;
-
+        width:100%;
+        margin-left:0;
     }
 
     /* Hero code starts here */
