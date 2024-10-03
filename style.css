@@ -1728,6 +1728,7 @@ ul {
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        padding-left: 3rem;
     }
 
     #quoteBtn {
@@ -2058,6 +2059,10 @@ ul {
         margin: 4rem 0 4rem 3rem;
     }
 
+    .chooseUsHeader{
+        padding-right: 3rem;
+    }
+
     .chooseUsTitle h3 {
         font-size: 18px;
         text-align: center;
@@ -2298,7 +2303,7 @@ ul {
     /* contact code start's here */
 
     .contactContainer {
-        margin: 0 10rem 0 10rem;
+        margin: 0 10rem 0 6rem;
 
     }
 
@@ -2306,10 +2311,14 @@ ul {
         padding: 10rem 0;
     }
 
+    .contactCol1{
+        padding-right: 3rem;
+    }
 
     .contactBody {
         gap: 1rem;
     }
+    
 
     .contactHeadImg img {
 
