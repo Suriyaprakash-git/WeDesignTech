@@ -134,6 +134,10 @@ header {
     background-image: url(./assets/images/section1-vector-layer1.png);
     background-position: right top;
     background-size: 58%;
+/*     this is last update */
+    width: 100%;
+    height:auto;
+/*     this is last update */
     background-repeat: no-repeat;
     padding-bottom: 10rem;
 
@@ -1657,6 +1661,8 @@ ul {
         margin: 0;
         padding: 0;
     }
+
+    .row { margin-right: 0; margin-left: 0; }
 
     .grid-1,
     .grid-2,
