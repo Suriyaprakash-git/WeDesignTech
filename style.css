@@ -1663,7 +1663,7 @@ ul {
         border: 1px solid red;
     }
 
-    .row { margin-right: 0; margin-left: 0; }
+    body { overflow: hidden; }
 
     .grid-1,
     .grid-2,
